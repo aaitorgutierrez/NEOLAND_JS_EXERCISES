@@ -15,6 +15,5 @@ const averageWord = (array) => {
     return acc + accString
     
 }
-
 const totalMixedElements = averageWord(mixedElements)
 console.log(totalMixedElements)
