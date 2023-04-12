@@ -24,11 +24,7 @@ const nameFinder = [
       if (wordBuscar === nombre) {
         counterIndex.push(index)
       }
-      
-     
-      
     });
-
     }
     if (counterIndex.length > 0) {
       return {
@@ -40,5 +36,6 @@ const nameFinder = [
       return false
     }
   }
+
 
   console.log(finderName(nameFinder, "Peggy"))

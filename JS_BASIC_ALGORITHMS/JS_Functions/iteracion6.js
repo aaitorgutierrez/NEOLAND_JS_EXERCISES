@@ -25,7 +25,7 @@ const duplicates = [
   }
 
   console.log(removeDuplicates(duplicates))
-//1º !newArray.includes(comida): Se verifica si la comida (comida) no está incluida en el arreglo newArray. 
+//1º !newArray.includes(comida): verifica si la comida (comida) no está incluida en el array newArray. 
 //El símbolo de exclamación (!) antes de newArray.includes(comida) significa "no", 
 //por lo que esta parte del código verifica si la comida no está en newArray.
 
