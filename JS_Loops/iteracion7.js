@@ -10,12 +10,9 @@ const toys = [
 	{id: 40, name: 'El gato felix', sellCount: 35}
 ]
 
-
-
 for (const toy of toys) {
 	if (toy.sellCount >= 15) {
 		popularToys.push(toy)
 	}
-	
 }
 console.log(popularToys)
