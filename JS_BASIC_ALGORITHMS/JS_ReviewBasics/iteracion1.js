@@ -14,11 +14,10 @@ const movies = [
 
 const categoriesMovie = []
 
+
 for (const movie of movies) {
     for (categorie of movie.categories) {
-    if ((!categorie.movie).includes("string")) {
-        categoriesMovie.push(categorie.movie)
-    }
+        console.log(categorie)
 }
 }
 console.log(categoriesMovie)
