@@ -5,8 +5,8 @@
 const cadenaStrings = ['Caracol', 'Mosquito', 'Salamandra', 'Ajolote']
 function findArrayIndex(array, text) {
     let resultado = []
-    array.forEach((element , index) => {
-        if (text == element) {
+    array.forEach((texto , index) => {
+        if (text == texto) {
             resultado.push({
                 "text": text,
                 "index": index,

@@ -44,6 +44,7 @@ for (const user of users) {
 
         }
     }   
+    
     let media = acc / longitud
     console.log(media)
 

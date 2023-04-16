@@ -17,7 +17,9 @@ const categoriesMovie = []
 
 for (const movie of movies) {
     for (categorie of movie.categories) {
-        console.log(categorie)
+    if (!categoriesMovie.includes(categorie)) {
+        categoriesMovie.push(categorie)
+    }
 }
 }
 console.log(categoriesMovie)
