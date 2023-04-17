@@ -6,8 +6,6 @@
 
 const famososWallmart = ['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'];
 
-
-
 const newArray = famososWallmart.map((intercambio, index) => ({
     index: index,
     nombre: intercambio,

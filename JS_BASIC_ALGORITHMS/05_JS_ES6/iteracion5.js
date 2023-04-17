@@ -40,7 +40,7 @@ const streamers1 = [
 
 let streamersU = []
 const arrayStreamers = streamers1.filter(directo => (directo.name.includes("u") ? streamersU.push(directo) : null))
-console.log(streamersU)
+console.log("linea43",streamersU)
 
 
 
@@ -59,7 +59,29 @@ const streamers2 = [
 
 let newArray = []
 
-const newArrayStreamer = streamers2.filter(newStreamer => newStreamer.gameMorePlayed.includes('Legends') 
-&& newArray.push(newStreamer) ? newStreamer.age > 35 && newStreamer.toUpperCase(newStreamer.gameMorePlayed) : newStreamer )
+const newArrayStreamer = streamers2.filter((streamer)=>	{
+	if	(streamer.gameMorePlayed.includes("Legends")){
+		if (streamer.age > 35) {
+			streamer.gameMorePlayed = streamer.gameMorePlayed.toUpperCase()
+		}
+		return streamer
+	}
+})
+console.log("linea70 ",newArrayStreamer)
 
-console.log(newArray)
+
+
+// 5.6 Dado el siguiente html y javascript, utiliza .filter() para mostrar por consola 
+// los streamers que incluyan la palabra introducida en el input. De esta forma, si 
+// introduzco 'Ru' me deberia de mostrar solo el streamer 'Rubius'. Si
+// introduzco 'i', me deberia de mostrar el streamer 'Rubius' e 'Ibai'.
+
+const streamers4 = [
+	{name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft'},
+	{name: 'Ibai', age: 25, gameMorePlayed: 'League of Legends'},
+	{name: 'Reven', age: 43, gameMorePlayed: 'League of Legends'},
+	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
+];
+
+
+

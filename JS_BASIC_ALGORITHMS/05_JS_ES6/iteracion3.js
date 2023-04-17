@@ -40,7 +40,7 @@ console.log(newObj)
 const colors = ['rojo', 'azul', 'amarillo', 'verde', 'naranja'];
 
 
-let newColor1 = [...colors.splice(0, 2)]
-let newColor2 = [...colors.splice(1, 3)]
-let finalColour = [newColor1 + "," + newColor2]
-console.log(finalColour)
+let newColor1 = [...colors]
+newColor1.splice(2 , 1)
+
+console.log(newColor1)

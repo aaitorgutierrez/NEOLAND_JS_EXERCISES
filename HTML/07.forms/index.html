@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="E-mail">E-mail:</label>
+        <!-- atributos -->
+        <input type="text" 
+        id="E-mail" 
+        placeholder="email@gmail.com" 
+        maxlength="10" 
+        minlength="3"
+        required>
+        <!-- fin atributos -->
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <input type="password">
+        <textarea>Escribe tu descripción</textarea>
+        <input type="number" min="10" max="20"></input>
+        <input type="range" min="0" max="100" step="25"></input>
+        <input type="date" min="2023-04-03" max="2023-04-17"></input>
+        <input type="week"></input>
+        <input type="checkbox" value="OK" checked></input> 
+        <input type="radio"></input>
+        <select>
+          <option value="">--</option> 
+          <optgroup label="Cine contemporaneo">Cine contemporaneo</optgroup>
+            <option value="batman">batman</option> 
+            <option value="deadpool">deadpool</option> 
+          </optgroup>
+        </select>
+        <button type="sumbit">Enviar</button>
+        <input type="reset" value="Reset"></input>
+    </fieldset>
+    </form>
+    <form>
+    <datalist>
+        <input type="color" value="FFFFFF"></input>
+        <input type="file"></input>
+        <meter min="0" max="100" optimum="50" high="100" value="18 ">
+        <progress min="0" max="100" value="50"></progress>
+    </datalist>
+    </form>
+</body>
+</body>
+    <details>
+        <h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa debitis, tempore tenetur veniam cumque eos adipisci ipsam omnis non similique excepturi cupiditate quam doloremque, optio unde nesciunt ducimus perferendis nisi.
+            </p>
+        </h2>
+    </details>
+    <dialog id="alert">
+        <p>¡Hola!</p>
+        <button id="close" onclick="document.getElementById('alert').close()">
+          Ok!
+        </button>
+      </dialog>
+      <button id="show" onclick="document.getElementById('alert').show()">
+        Mostrar
+      </button>
+</body>
+</html>

@@ -8,9 +8,6 @@ const alien = {
     weight: '259kg'
 }
 for (const recorrerAlien in alien) {
-    if (Object.hasOwnProperty.call(alien, recorrerAlien)) {
-   const element = alien[recorrerAlien];
-   console.log(element)
- 
-    }
+   console.log(`${recorrerAlien}: ${alien[recorrerAlien]}`)
+   
 }
