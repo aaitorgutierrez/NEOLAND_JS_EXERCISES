@@ -34,3 +34,4 @@ console.log(sumExams1)
 const sumExams2 = exams.reduce((acc, value)=>acc + value.score, 0)  
 const promedio = sumExams2 / exams.length
 console.log(promedio)
+

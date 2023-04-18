@@ -39,8 +39,9 @@ const cities = [
 ];
 
 const vCities = cities.map(city => ({
+    isVisited: city.isVisited,
     name: city.isVisited,
-    visited: city.isVisited === true ? "visitado" : city.name,
+    visited: city.isVisited === true ? "visitado" : "No visitado",
 }));
 
 console.log(vCities);

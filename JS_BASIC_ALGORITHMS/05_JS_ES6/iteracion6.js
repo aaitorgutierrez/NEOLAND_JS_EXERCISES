@@ -30,10 +30,5 @@ const mutations = [
 const aliensName = aliens.find(alien => alien.name == "Cucushumushu")
 const mutationName = mutations.find(mutation => mutation.name == "Porompompero")
 
-if (aliensName && mutationName) {
-    const newArray = {...aliensName, ...mutationName}
-    console.log(newArray)
-}
-
 const newArray = [...aliensName, ...mutationName]
 console.log(newArray)

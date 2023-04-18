@@ -37,7 +37,7 @@ let longitud = 0
 
 for (const user of users) {
     for (const sonidos in user.favoritesSounds) {
-            user.favoritesSounds[sonidos]
+            
             console.log(user.favoritesSounds[sonidos].volume)
             acc +=user.favoritesSounds[sonidos].volume
             longitud++
