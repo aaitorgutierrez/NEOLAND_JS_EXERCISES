@@ -39,10 +39,17 @@ const frase = () => {
     const rick = "Wubba Lubba dub dub"; 
     const h2insert = document.querySelectorAll(".fn-insert-here"); 
     for (nuevo of h2insert) {
-    nuevo.innerText = "Wubba Lubba dub dub"; 
+    nuevo.innerText += "Wubba Lubba dub dub"; 
     }
 }
 frase();
+
+const h2texto = document.querySelectorAll(".fn-insert-here");
+const texto2 = "Wubba Lubba dub dub";
+
+h2texto.forEach((element) => {
+  element.innerText = texto2;
+});
 
 // 2.6 Basandote en el siguiente array crea una lista 
 // ul > li con los textos del array.
