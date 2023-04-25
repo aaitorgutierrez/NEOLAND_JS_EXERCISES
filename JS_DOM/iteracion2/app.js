@@ -33,10 +33,49 @@ document.body.appendChild(div3)
 const frase = () => {
     const rick = "Wubba Lubba dub dub"; 
     const h2insert = document.querySelectorAll(".fn-insert-here"); 
-    for (nuevo of h2insert) {
-    nuevo.innerText = "Wubba Lubba dub dub"; 
+    for (nuevos of h2insert) {
+    nuevos.innerText = rick; 
     }
 }
 frase();
 
-//2.6
+// 2.6 Basandote en el siguiente array crea una lista ul > li con los textos del array.
+
+const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter']
+
+const newLista = () => {
+    const nuevoUl = document.createElement("ul")
+  apps.forEach(app => {
+    const nuevoLi = document.createElement("li")
+    nuevoLi.innerText= app
+    nuevoUl.appendChild(nuevoLi)
+  });
+  document.body.appendChild(nuevoUl)
+}
+newLista()
+
+
+//2.7 Elimina todos los nodos que tengan la clase .fn-remove-me
+
+const elementos = document.querySelectorAll(".fn-remove-me")
+elementos.forEach((element) => {
+    element.remove()
+})
+
+//2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. 
+//Recuerda que no solo puedes insertar elementos con .appendChild.
+// Obtén los elementos div con la clase 'fn-insert-here'
+
+const afterDiv = document.querySelector("div");
+const parrafo = document.createElement("p");
+parrafo.innerText = "Voy en medio!";
+const padre = afterDiv.parentNode;
+padre.insertBefore(parrafo, afterDiv);
+
+//2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here
+const dentro = document.querySelectorAll(".fn-insert-here")
+dentro.forEach((element)=> {
+    const nuevaP = document.createElement("p")
+    nuevaP.innerText = "Voy dentro!"
+    element.appendChild(nuevaP)
+})
