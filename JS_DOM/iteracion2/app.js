@@ -67,10 +67,7 @@ elementos.forEach((element) => {
 // Obtén los elementos div con la clase 'fn-insert-here'
 
 const afterDiv = document.querySelector("div");
-const parrafo = document.createElement("p");
-parrafo.innerText = "Voy en medio!";
-const padre = afterDiv.parentNode;
-padre.insertBefore(parrafo, afterDiv);
+afterDiv.insertAdjacentHTML("beforebegin", "voy en medio")
 
 //2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here
 const dentro = document.querySelectorAll(".fn-insert-here")
