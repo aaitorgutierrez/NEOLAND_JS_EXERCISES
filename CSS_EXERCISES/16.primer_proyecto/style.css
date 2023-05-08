@@ -98,6 +98,7 @@ button {
     background-image: url(assets/background2.jpg);
     background-position: center;
     background-size: cover;
+    transition-duration: 0.5s;
 }
 .card2 {
     width: 200px;
@@ -110,6 +111,7 @@ button {
     background-image: url(assets/Pirineos.jpg);
     background-position: center;
     background-size: cover;
+    transition-duration: 0.5s;
 }
 .card3 {
     width: 200px;
@@ -122,6 +124,7 @@ button {
     background-image: url(assets/sierraMorena3.JPG);
     background-position: center;
     background-size: cover;
+    transition-duration: 0.5s;
 }
 .card4 {
     width: 200px;
@@ -134,10 +137,29 @@ button {
     background-image: url(assets/teide.jpg);
     background-position: center;
     background-size: cover;
+    transition-duration: 0.5s;
 }
 
 @media screen and (max-width: 980px) {
     .texto {
         flex-direction: column;
     }    
+}
+
+.card:hover {
+    transform: translateY(-0.625rem);
+}
+.card2:hover {
+    transform: translateY(-0.625rem);
+}
+.card3:hover {
+    transform: translateY(-0.625rem);
+}
+.card4:hover {
+    transform: translateY(-0.625rem);
+}
+.navbar:hover{
+    text-decoration: underline;
+    color: black;
+    
 }
