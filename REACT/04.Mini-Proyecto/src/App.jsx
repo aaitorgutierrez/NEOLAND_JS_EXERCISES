@@ -1,23 +1,42 @@
 import { useState } from "react";
+import React from "react";
 import "./App.css";
-import Image from "./Image/Image";
-import Paragraph from "./Paragraph/Paragraph";
-import SubTitle from "./subTitle/subTitle";
-import Title from "./title/title";
 
-const App = (data) => {
-  const iAmTitle = "Welcome to Components ReactJS";
-  const iAmSubTitle = "esto es un prop bien bacano";
-  const Image2 =
-    "https://upload.wikimedia.org/wikipedia/commons/1/18/React_Native_Logo.png";
-  const iAmParragraph = "Pedro si lees esto me debes una CocaCola";
+const charactersMock = [
+  {
+    id: 1,
+    name: "Rick Sanchez",
+    status: "Alive",
+  },
+  {
+    id: 2,
+    name: "Morty Smith",
+    status: "Alive",
+  },
+];
+
+const App = () => {
+  const [characterList, setCharacterList] = React.useState([]);
+
+  React.useEffect(() => {
+    (async () => {
+      let data = await fetch(`https://rickandmortyapi.com/api/character/`).then(
+        (res) => res.json()
+      );
+
+      setCharacterList(data.results);
+    })();
+  }, []);
+
   return (
-    <div className="App1">
-      <Title data={iAmTitle} />
-      <SubTitle data={iAmSubTitle} />
-      <Image data={Image2} />
-      <Paragraph dataP={iAmParragraph} />
-    </div>
+    <>
+      {characterList.map((character) => (
+        <div className="card" key={character.id}>
+          <h2>name: {character.name}</h2>
+          <h2>origin: {character.gender}</h2>
+        </div>
+      ))}
+    </>
   );
 };
 

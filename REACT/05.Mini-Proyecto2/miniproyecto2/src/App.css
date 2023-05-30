@@ -2,7 +2,11 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  border: solid 1px black;
+  box-sizing: border-box;
+}
+div#root {
+  margin: 0 auto;
+  padding: 2rem;
 }
 .card {
   border: solid black 1px;
@@ -15,4 +19,9 @@
 .card:hover {
   color: white;
   background-color: grey;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
 }
