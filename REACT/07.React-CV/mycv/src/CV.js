@@ -61,7 +61,7 @@ export const CV = {
     wrlevel: "Native",
     splevel: "Native",
   },
-  habilities: [
+  abilities: [
     "Robotics",
     "Robot Programming",
     "Physics",

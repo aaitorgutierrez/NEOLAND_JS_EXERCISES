@@ -16,3 +16,7 @@
   color: white;
   background-color: grey;
 }
+li ul {
+  list-style-type: none;
+  text-decoration: none;
+}
