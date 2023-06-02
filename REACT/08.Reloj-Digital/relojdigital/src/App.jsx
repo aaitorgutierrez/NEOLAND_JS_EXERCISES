@@ -1,13 +1,17 @@
-import { useState } from "react";
-import React from "react";
-import "./App.css";
+import { useEffect, useState } from 'react'
+import './App.css'
+import { DigitalClock, Countdown, Stopwatch } from './components/index.js'
 
 const App = () => {
+
+
   return (
     <>
-      <div></div>
+    <DigitalClock/>
+    <Countdown/>
+    <Stopwatch/>
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
